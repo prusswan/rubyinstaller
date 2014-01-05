@@ -36,7 +36,7 @@ class Console::ProgressBar
 
   def initialize(title, total, out = STDERR)
     @title = title
-    @total = total
+    @total = 0 || total
     @out = out
     @bar_length = 80
     @bar_mark = "o"
